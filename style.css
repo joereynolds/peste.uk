@@ -230,11 +230,22 @@ body {
 @media (max-width: 768px) {
   .members-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
   .members-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .member-info {
+    padding: 0.65rem;
+  }
+  .member-name {
+    font-size: 1.1rem;
+  }
+  .member-role {
+    font-size: 0.75rem;
   }
 }
