@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Press Kit | PESTE</title>
+  <meta name="description" content="Electronic Press Kit for Peste - UK progressive hardcore band. Press photos, bio, technical requirements & booking information.">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* EPK-specific styles */
+    .nav-link {
+      display: inline-block;
+      font-family: var(--font-punk);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      color: var(--grey-muted);
+      text-decoration: none;
+      margin-bottom: 1rem;
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover {
+      color: var(--red-bright);
+    }
+    .nav-link::before {
+      content: "← ";
+    }
+    
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .download-card {
+      background: var(--bg-card);
+      border: 1px solid var(--grey-border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    
+    .download-card:hover {
+      border-color: var(--red-primary);
+      transform: translateY(-2px);
+    }
+    
+    .download-title {
+      font-family: var(--font-punk);
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      color: var(--red-bright);
+      margin-bottom: 0.5rem;
+    }
+    
+    .download-desc {
+      color: var(--grey-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      background: var(--red-primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-family: var(--font-punk);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      border-radius: 2px;
+      transition: background 0.2s ease;
+    }
+    
+    .download-btn:hover {
+      background: var(--red-bright);
+    }
+    
+    .download-btn.disabled {
+      background: var(--grey-border);
+      color: var(--grey-muted);
+      cursor: not-allowed;
+    }
+    
+    .info-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .info-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--grey-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .info-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .info-label {
+      font-family: var(--font-punk);
+      color: var(--grey-muted);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+    }
+    
+    .info-value {
+      color: var(--grey-light);
+      text-align: right;
+    }
+    
+    .tech-section {
+      background: var(--bg-card);
+      border: 1px solid var(--grey-border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .tech-heading {
+      font-family: var(--font-punk);
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      color: var(--red-bright);
+      margin-bottom: 1rem;
+    }
+    
+    .tech-content {
+      color: var(--grey-light);
+      line-height: 1.7;
+    }
+    
+    .tech-content ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    
+    .tech-content li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .placeholder-notice {
+      background: rgba(148, 44, 44, 0.1);
+      border: 1px dashed var(--red-primary);
+      border-radius: 4px;
+      padding: 1rem;
+      color: var(--grey-muted);
+      font-style: italic;
+      margin-top: 1rem;
+    }
+    
+    .quote-box {
+      border-left: 3px solid var(--red-primary);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: var(--grey-light);
+    }
+    
+    .quote-source {
+      font-style: normal;
+      color: var(--grey-muted);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <a href="../index.html" class="nav-link">BACK TO HOME</a>
+    
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="brand-title">ELECTRONIC PRESS KIT</h1>
+      <div class="brand-subtitle">PESTE | Progressive Hardcore</div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      
+      <!-- BAND INFO -->
+      <section>
+        <div class="section-heading">BAND INFORMATION</div>
+        <ul class="info-list">
+          <li>
+            <span class="info-label">BAND NAME</span>
+            <span class="info-value">Peste</span>
+          </li>
+          <li>
+            <span class="info-label">GENRE</span>
+            <span class="info-value">Progressive Hardcore</span>
+          </li>
+          <li>
+            <span class="info-label">LOCATION</span>
+            <span class="info-value">United Kingdom</span>
+          </li>
+          <li>
+            <span class="info-label">LINEUP</span>
+            <span class="info-value">4-piece</span>
+          </li>
+          <li>
+            <span class="info-label">CONTACT</span>
+            <span class="info-value"><a href="mailto:pesteuk@gmail.com" style="color:var(--red-bright); text-decoration:none;">pesteuk@gmail.com</a></span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BAND BIO -->
+      <section>
+        <div class="section-heading">BIOGRAPHY</div>
+        <div class="bio-text">
+          <p style="margin-bottom: 1rem;">
+            Formed in 2023, Peste is a 4-piece UK-based progressive hardcore
+            band. Mixing the groove elements of hardcore, intensity of punk
+            and the technical side of progressive metal to create a sound that is their own.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT & BOOKING -->
+      <section class="contact-box">
+        <div class="section-heading">BOOKING & ENQUIRIES</div>
+        <p style="color:var(--grey-muted); font-size:0.95rem;">For gig bookings, press enquiries, and collaborations:</p>
+        <a href="mailto:pesteuk@gmail.com" class="email-link">pesteuk@gmail.com</a>
+        
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--grey-border);">
+          <p style="color:var(--grey-muted); font-size:0.85rem;">
+            This EPK is regularly updated. For the latest information, visit <a href="../index.html" style="color:var(--red-bright); text-decoration:none;">peste.uk</a>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
