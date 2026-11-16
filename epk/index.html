@@ -21,9 +21,6 @@
     .nav-link:hover {
       color: var(--red-bright);
     }
-    .nav-link::before {
-      content: "← ";
-    }
     
     .download-grid {
       display: grid;
@@ -53,6 +50,13 @@
       margin-bottom: 0.5rem;
     }
     
+    .press-photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+    }
+
     .download-desc {
       color: var(--grey-muted);
       font-size: 0.9rem;
@@ -173,16 +177,13 @@
     
     <a href="../index.html" class="nav-link">BACK TO HOME</a>
     
-    <!-- HEADER -->
     <header class="header">
       <h1 class="brand-title">ELECTRONIC PRESS KIT</h1>
       <div class="brand-subtitle">PESTE | Progressive Hardcore</div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main class="main-content">
       
-      <!-- BAND INFO -->
       <section>
         <div class="section-heading">BAND INFORMATION</div>
         <ul class="info-list">
@@ -209,7 +210,6 @@
         </ul>
       </section>
 
-      <!-- BAND BIO -->
       <section>
         <div class="section-heading">BIOGRAPHY</div>
         <div class="bio-text">
@@ -221,17 +221,64 @@
         </div>
       </section>
 
-      <!-- CONTACT & BOOKING -->
+      <section>
+        <div class="section-heading">MUSIC</div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3PwiyXzasPTivqHSyiThdi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Bad Influence on Spotify"></iframe>
+        <p style="margin-top: 1rem;">
+          <a href="https://www.dropbox.com/scl/fi/jd8vzoxox4xedweh9leyy/01-Bad-Influence-Digital-Master-2-27.08.26-48hz-24bit.wav?rlkey=e9i8qae8q6x00ws9ld6pt9dec&amp;st=if9qhdoi&amp;dl=0" target="_blank" rel="noopener" class="download-btn">BAD INFLUENCE (WAV)</a>
+        </p>
+      </section>
+
+      <section>
+        <div class="section-heading">PRESS PHOTOS</div>
+        <div class="download-desc">Full-resolution press photo. Free to use with credit to Peste.</div>
+        <div class="download-grid">
+          <div class="download-card">
+            <a href="../assets/images/peste-rough-logo-resized.jpg" target="_blank" rel="noopener">
+              <img src="../assets/images/peste-rough-logo-resized.jpg" alt="Peste logo" class="press-photo" loading="lazy">
+            </a>
+          </div>
+          <div class="download-card">
+            <a href="../assets/images/group.jpg" target="_blank" rel="noopener">
+              <img src="../assets/images/group.jpg" class="press-photo" loading="lazy">
+            </a>
+          </div>
+          <div class="download-card">
+            <a href="../assets/images/headshot-george.jpg" target="_blank" rel="noopener">
+              <img src="../assets/images/headshot-george.jpg" alt="Headshot of George" class="press-photo" loading="lazy">
+            </a>
+          </div>
+          <div class="download-card">
+            <a href="../assets/images/headshot-joe.jpg" target="_blank" rel="noopener">
+              <img src="../assets/images/headshot-joe.jpg" alt="Headshot of Joe" class="press-photo" loading="lazy">
+            </a>
+          </div>
+          <div class="download-card">
+            <a href="../assets/images/headshot-lew.jpg" target="_blank" rel="noopener">
+              <img src="../assets/images/headshot-lew.jpg" alt="Headshot of Lew" class="press-photo" loading="lazy">
+            </a>
+          </div>
+          <div class="download-card">
+            <a href="../assets/images/headshot-matt.jpg" target="_blank" rel="noopener">
+              <img src="../assets/images/headshot-matt.jpg" alt="Headshot of Matt" class="press-photo" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="contact-box">
-        <div class="section-heading">BOOKING & ENQUIRIES</div>
+        <div class="section-heading">BOOKING &amp; ENQUIRIES</div>
         <p style="color:var(--grey-muted); font-size:0.95rem;">For gig bookings, press enquiries, and collaborations:</p>
         <a href="mailto:pesteuk@gmail.com" class="email-link">pesteuk@gmail.com</a>
-        
-        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--grey-border);">
-          <p style="color:var(--grey-muted); font-size:0.85rem;">
-            This EPK is regularly updated. For the latest information, visit <a href="../index.html" style="color:var(--red-bright); text-decoration:none;">peste.uk</a>
-          </p>
+
+        <div class="social-links">
+          <a href="https://instagram.com/pesteband" target="_blank" rel="noopener noreferrer" class="social-link">INSTAGRAM</a>
+          <a href="https://www.facebook.com/p/PESTE-61594158778188/" target="_blank" rel="noopener noreferrer" class="social-link">FACEBOOK</a>
+          <a href="https://www.youtube.com/@pesteband" target="_blank" rel="noopener noreferrer" class="social-link">YOUTUBE</a>
+          <a href="https://www.tiktok.com/@pesteband" target="_blank" rel="noopener noreferrer" class="social-link">TIKTOK</a>
+          <a href="https://open.spotify.com/artist/5wFu4jJl7GZhJ5RS6QG6x5?si=3jNAeg6AQcqdi1zQf4Fasg" target="_blank" rel="noopener noreferrer" class="social-link">SPOTIFY</a>
         </div>
+
       </section>
 
     </main>
